@@ -2,9 +2,9 @@
  <div class="cart-overlay">
  <div class="cart-display relative">
  <div class="flex flex-col items-center justify-center">
- <input class="input" v-model="subscribe.email" placeholder="Enter email" type="email"/>
- <input class="input" v-model="subscribe.password" placeholder="Create password" type="password"/>
- <button class="large-btn mt-10">Create an account</button>
+ <input required class="input" v-model="subscribe.email" placeholder="Enter email" type="email"/>
+ <input required class="input" v-model="subscribe.password" placeholder="Create password" type="password"/>
+ <button @click="alertCreatedAccount(), $emit('closeCreateAccount')"  class="large-btn mt-10">Create an account</button>
 
          <!-- close create account -->
         <button class="close-cart" @click="$emit('closeCreateAccount')">
@@ -28,6 +28,12 @@ export default {
                 password: '',
             }
         }
+    },
+
+    methods: {
+      alertCreatedAccount(){
+        alert(this.subscribe.email + " " + "Your account has been successfully created")
+      }
     }
 }
 </script>

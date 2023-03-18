@@ -48,9 +48,9 @@
       <!-- create account -->
       <div 
         @click="openCreateAccount = true"
-       class="px-6 py-2 border flex items-center mr-10">
-            <button class="text-sm mr-2">Create Account</button>
-        <icon class="ml-2 text-sm" name="uil:user" />
+       class="px-6 py-2 border-[2px] flex items-center mr-10">
+            <button class="text-sm mr-4">Create Account</button>
+        <icon class="text-sm text-[#4b5563]" name="uil:user" />
       </div>
       
       <!-- carting icon -->
