@@ -50,7 +50,7 @@
         @click="openCreateAccount = true"
        class="px-6 py-2 border flex items-center mr-10">
             <button class="text-sm mr-2">Create Account</button>
-        <icon class="ml-2 text-white text-sm" name="uil:user" />
+        <icon class="ml-2 text-sm" name="uil:user" />
       </div>
       
       <!-- carting icon -->
