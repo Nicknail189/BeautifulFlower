@@ -64,7 +64,7 @@
             </p>
           </div>
           <button
-            class="black-text text-sm border border-[#1f1f1f] hover:gray-bg px-12 py-6 rounded-sm uppercase"
+            class="large-btn mt-10"
           >
             Proceed to payment
           </button>

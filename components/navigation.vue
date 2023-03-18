@@ -42,7 +42,17 @@
           <p class="nav-p">Openings</p>
         </li>
       </ul>
+      
 
+<div class="flex items-center">
+      <!-- create account -->
+      <div 
+        @click="openCreateAccount = true"
+       class="px-6 py-2 border flex items-center mr-10">
+            <button class="text-sm mr-2">Create Account</button>
+        <icon class="ml-2 text-white text-sm" name="uil:user" />
+      </div>
+      
       <!-- carting icon -->
       <div
         @click="openCart = true"
@@ -56,6 +66,7 @@
         <icon class="text-[24px] text-white" name="uil:shopping-cart-alt" />
       </div>
     </div>
+</div>
 
     <!-- About links -->
     <div class="center-flex">
@@ -134,6 +145,10 @@
   </div>
   <!-- Cart system -->
   <cart v-if="openCart === true" @closeCart="openCart = false" />
+
+  <!-- subscribe -->
+  <create-account v-if="openCreateAccount === true" @closeCreateAccount="openCreateAccount = false" />
+
 </template>
 
 <script>
@@ -143,6 +158,7 @@ export default {
     return{
       store,
       openCart: false,
+      openCreateAccount: false,
     }
   },
 
