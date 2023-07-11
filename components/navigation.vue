@@ -79,7 +79,7 @@
         <ul class="flex flex-col py-5 text-gray-600 text-[14px]">
           <li @click="scroll('delivery-info')" class="nav-p">Delivery</li>
           <li @click="scroll('reviews')" class="nav-p">Reviews</li>
-          <li @click="scroll('socials')" class="nav-p">Socials</li>
+          <li @click="scroll('socials')" class="nav-p">Contact</li>
         </ul>
       </div>
     </div>

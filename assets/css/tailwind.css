@@ -55,4 +55,6 @@ body {@apply gray-bg box-border text-gray-600}
     .quantityIcon {@apply hover:gray-bg black-text text-[28px] rounded-[50%] p-2}
     .large-btn {@apply black-text text-sm border border-[#1f1f1f] hover:gray-bg px-12 py-6 rounded-sm uppercase}
     .input {@apply w-8/12 h-[52px] px-3 m-3 rounded outline outline-green-700/50}
+
+    .phaseBtn {@apply px-6 py-1 h-10 rounded-sm text-white flex place-items-center bg-green-700 hover:bg-green-800}
 }

@@ -63,11 +63,13 @@
               <span>{{ "$" + totalPrice }}</span>
             </p>
           </div>
+          <NuxtLink to="/payment">
           <button
             class="large-btn mt-10"
           >
             Proceed to payment
           </button>
+          </NuxtLink>
         </div>
 
         <!-- close cart button -->
